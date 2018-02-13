@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+h3 {
+    font-size: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-areas: "urlServidor estadoPeticion"
+                        "contenidosArchivo estadoPeticion"
+                        "cabeceras codigosEstado";
+    padding: 5px 5px;
+}
+#urlServidor {
+    height: 15vh;
+    grid-area: urlServidor;
+    border-bottom: 1px solid #000;
+}
+#estadoPeticion {
+    grid-area: estadoPeticion;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#contenidosArchivo {
+    grid-area: contenidosArchivo;
+    height: 33vh;
+}
+#cabeceras {
+    grid-area: cabeceras;
+    border-top: 1px solid #000;
+    height: 33vh;
+}
+#codigosEstado {
+    grid-area: codigosEstado;
+    border-left: 1px solid #000;
+    
+}
+
+#btnMostrar {
+    color: #FFF;
+    padding: 15px 35px;
+    border: none;
+    background: #000;
+}
+
+#server {
+    width: 80%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+div>ul {
+    list-style: none;
+}
+
+div>ul li {
+    padding: 10px 20px;
+}
+
+
+#estadoPeticion>ul {
+    max-height: 60vh;
+    overflow: auto;
+}
+
+
+#contenidosArchivo>div {
+    height: 40vh;
+    width: 150vh;
+    overflow: scroll;
+}
+
+
+#containerCabeceras>ul {
+    min-height: 20vh;
+    max-height: 30vh;
+    overflow: auto;
+}
+
+
+#codigosEstado>ul {
+    min-height: 20vh;
+    max-height: 30vh;
+    overflow: auto;
+}
